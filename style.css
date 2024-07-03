@@ -17,6 +17,7 @@ body {
     padding: 0px;
     font-family: 'Montserrat-M';
     position: relative;
+
 }
 
 .wrapper {
@@ -24,7 +25,9 @@ body {
     width: auto;
     margin: auto;
     position: relative;
-    background-image: linear-gradient(rgb(4, 4, 30), rgb(0, 0, 0));
+    background-image: url(asset/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .logo-trisaga {
@@ -46,8 +49,9 @@ body {
 .tabel-penilaian {
     display: flex;
     margin: 0 auto;
-    width: 80%;
-    height: 1000px;
+    width: 50%;
+    height: 300px;
+    margin-top: 30px;
 }
 
 
@@ -98,23 +102,6 @@ a.tbl-biru {
 }
 
 a.tbl-biru:hover {
-    background: #11409D;
-    color: white;
-    text-decoration: none;
-}
-
-a.tbl-pink {
-    background: #ddd;
-    border-radius: 20px;
-    margin-top: 20px;
-    padding: 15px 20px 15px 20px;
-    color: black;
-    cursor: pointer;
-    font-weight: bold;
-    margin-left: 5px;
-}
-
-a.tbl-pink:hover {
     background: #11409D;
     color: white;
     text-decoration: none;
