@@ -245,6 +245,15 @@ p {
         height: auto;
     }
 
+    .tabel-penilaian {
+        display: flex;
+        margin: 0 auto;
+        width: 75%;
+        height: 300px;
+        margin-top: 30px;
+    }
+
+
     a.tbl-biru {
         font-family: 'Higuen';
         font-size: 35px;
@@ -327,6 +336,15 @@ p {
         background-size: cover;
         background-attachment: fixed;
     }
+
+    .tabel-penilaian {
+        display: flex;
+        margin: 0 auto;
+        width: 75%;
+        height: 300px;
+        margin-top: 30px;
+    }
+
 
     a.tbl-biru {
         font-family: 'Higuen';
