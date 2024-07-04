@@ -406,6 +406,10 @@ p {
         background-attachment: fixed;
     }
 
+    .vidio-trailer {
+        margin-bottom: -10px;
+    }
+
     .logo-neapolis {
         width: 80%;
         margin-bottom: -10px;
@@ -485,103 +489,100 @@ p {
   }
 
   @media  screen and (max-width: 420px){
+    .wrapper {
+        padding-top: 100px;
+        width: auto;
+        margin: auto;
+        position: relative;
+        background-image: url(asset/bg-phone.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .vidio-trailer {
+        margin-bottom: -40px;
+    }
+
+    .logo-neapolis {
+        width: 80%;
+        margin-bottom: -10px;
+    }  
+
+    .tabel-penilaian {
+        display: flex;
+        margin: 0 auto;
+        width: 75%;
+        height: 300px;
+        margin-top: 30px;
+    }
+
     a.tbl-biru {
         font-family: 'Higuen';
-        font-size: 12px;
+        font-size: 17px;
         display: flex;
         justify-content: center;
         align-items: center;
         background: #ddd;
         border-radius: 20px;
-        margin-top: 20px;
+        margin-top: -30px;
         margin-left: 60px;
         margin-right: 60px;
-        padding: 10px 15px 15px 15px;
+        padding: 10px 20px 15px 20px;
         color: #000000;
         cursor: pointer;
         font-weight: bold;
         transition: 0.5s;
     }
-  }
 
-  @media  screen and (max-width: 400px){
-
-    .kartu-partner1 {
-        width: 10%;
-        margin: 0 auto;
+    h2 {
+        font-family: 'Montserrat-M';
+        font-weight: 800;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        width: 100%;
+        line-height: 50px;
     }
     
-    .kartu-partner1 img {
-        width: 70px;
-        margin-left: 23px;
-    }
-    
-    .kartu-partner2 {
-        width: 10%;
-        margin: 0 auto;
-    }
-    
-    .kartu-partner2 img {
-        width: 100px;
-        margin-top: -15px;
-        margin-left: 65px;
-    }
-    
-    .kartu-partner3 {
-        width: 10%;
-        margin: 0 auto;
-    }
-    
-    .kartu-partner3 img {
-        width: 80px;
-        margin-left: -300px;
-        margin-top: 130px;
-    }
-    
-    .kartu-partner4 {
-        width: 10%;
-        margin: 0 auto;
-    }
-    
-    .kartu-partner4 img {
-        width: 120px;
-        margin-top: 110px;
-        margin-left: -185px;
-    }
-    
-    .kartu-partner5 {
-        width: 10%;
-        margin: 0 auto;
-    }
-    
-    .kartu-partner5 img {
-        width: 80px;
-        margin-top: 130px;
-        margin-left: -60px;
-    }
-    
-    .kartu-partner6 {
-        width: 10%;
-        margin: 0 auto;
-    }
-    
-    .kartu-partner6 img {
-        width: 80px;
-        margin-left: 135px;
-    }
-
-    .leader1 {
-        width: 1%;
-        margin-left: 20px;
-        position: relative;
-        text-align: center;
+    #copyright {
+        background-color: #000;
         color: white;
-        font-family: 'Higuen';
+        text-align: center;
+        width: 100%;
+        padding: 35px 0px 70px 0px;
+        margin-top: 0 auto;
+        height: 100%;
+    }
+
+    .footer-section {
+        width: 40%;
+        margin-left: -73px;
+        font-size: 10px;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 0 auto;
+        margin-bottom: 0 auto;
+    }
+
+    .contactfont {
+        padding: 0px 0px 0px 0px;
+        font-size: 25px;
+        font-family: 'Grotesk';
     }
     
+    .contactfontdesc {
+        padding-right: 50px;
+        font-family: 'Poppins-R';
+        font-size: 8px;
+    }
+  
   }
 
-
+  
   @media  screen and (max-width: 375px){
     
     a.tbl-biru {
