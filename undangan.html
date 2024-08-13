@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Neapolis</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+
+
+  <div class="wrapper">
+    <!-- home -->
+    <section id="home">
+
+      <div class="kolom">
+        <img class="logo-neapolis" src="asset/logo-trisaganeapolis.png" alt="">
+      </div>
+    </section>
+
+    <div>
+        <a href="index.html" target="_self" class="tbl-biru">KEMBALI</a>
+        <a href="https://drive.google.com/drive/folders/1G4PUCvLswQrHTlEGRIrc-axT2Cx_DuU6?usp=drive_link" target="_self" class="tbl-biru">BUKA DRIVE</a>
+        <iframe class="tabel-penilaian" src="https://drive.google.com/file/d/1Kwk-Jo7LJSHn2mOAQhG3xsGBYDV7zD42/preview" width="640" height="480" allow="autoplay"></iframe>
+    
+    </div>
+
+  <div id="copyright">
+    <div class="wraper">
+      &copy; 2024. <b>TRISAGA</b> All Right Reserved.
+      <p class="creditzndn">created by <a class="creditzndn" href="https://www.instagram.com/zndnrhmn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@zndnrhmn</a></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+  <script>
+    /* Find all slideshow containers */
+    var slideshowContainers = document.getElementsByClassName("slideshow-container");
+    /* For each container get starting variables */
+    for (let s = 0; s < slideshowContainers.length; s++) {
+      /* Read the new data attribute */
+      var cycle = slideshowContainers[s].dataset.cycle;
+      /* Find all the child nodes with class mySlides */
+      var slides = slideshowContainers[s].querySelectorAll('.mySlides');
+      var slideIndex = 0;
+      /* Now we can cycle slides, but this recursive function must have parameters */
+      /* slides and cycle never change, those are unique for each slide container */
+      /* slideIndex will increase during each iteration */
+      showSlides(slides, slideIndex, cycle);
+    };
+
+    /* Function is alsmost same, but now it uses 3 new parameters */
+    function showSlides(slides, slideIndex, cycle) {
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      };
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      };
+      slides[slideIndex - 1].style.display = "block";
+      /* Calling same function, but with new parameters and cycle time */
+      setTimeout(function () {
+        showSlides(slides, slideIndex, cycle)
+      }, cycle);
+    };
+  </script>
+</body>
+
+</html>
